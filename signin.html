@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/signin.css">
+</head>
+<body>
+    <h1>APPLICATION FOR BECOMING A MEMBER</h1>
+    <form action="process_registration.php" method="post">
+        <!-- Personal Information -->
+        <label for="name">1) NAME (Name in full):</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="yearOfBirth">2) YEAR OF BIRTH:</label>
+        <input type="text" id="yearOfBirth" name="yearOfBirth" required><br>
+
+        <label for="gender">3) GENDER:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+
+        <label for="presentAddress">4) PRESENT ADDRESS:</label>
+        <textarea id="presentAddress" name="presentAddress" required></textarea><br>
+
+        <label for="sameAddress">5) PERMANENT ADDRESS (same as Present Address?):</label>
+        <input type="checkbox" id="sameAddress" name="sameAddress"><br>
+
+        <label for="pinCode">6) PIN CODE OF PRESENT ADDRESS:</label>
+        <input type="text" id="pinCode" name="pinCode" required><br>
+
+        <label for="phoneNumber">7) PHONE NUMBER (Include country code):</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required><br>
+
+        <label for="email">8) EMAIL ADDRESS:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <!-- Parent Information -->
+        <hr>
+        <label for="fatherName">10) NAME OF FATHER:</label>
+        <input type="text" id="fatherName" name="fatherName" required><br>
+
+        <label for="fatherTamilBrahmin">11) IS YOUR FATHER TAMIL BRAHMIN?</label>
+        <input type="radio" id="fatherYes" name="fatherTamilBrahmin" value="yes" required>
+        <label for="fatherYes">Yes</label>
+        <input type="radio" id="fatherNo" name="fatherTamilBrahmin" value="no" required>
+        <label for="fatherNo">No</label><br>
+
+        <label for="motherName">12) NAME OF MOTHER:</label>
+        <input type="text" id="motherName" name="motherName" required><br>
+
+        <label for="motherTamilBrahmin">13) IS YOUR MOTHER TAMIL BRAHMIN?</label>
+        <input type="radio" id="motherYes" name="motherTamilBrahmin" value="yes" required>
+        <label for="motherYes">Yes</label>
+        <input type="radio" id="motherNo" name="motherTamilBrahmin" value="no" required>
+        <label for="motherNo">No</label><br>
+
+        <label for="languageSpoken">14) LANGUAGE YOU SPEAK AT HOME:</label>
+        <input type="text" id="languageSpoken" name="languageSpoken" required><br>
+
+        <label for="gothram">15) YOUR GOTHRAM:</label>
+        <input type="text" id="gothram" name="gothram" required><br>
+
+        <!-- Occupation Information -->
+        <hr>
+        <label for="occupation">17) OCCUPATION:</label>
+        <select id="occupation" name="occupation" required>
+            <option value="student">Student</option>
+            <option value="employed">Employed</option>
+            <option value="business">Business</option>
+            <option value="vaideekham">Vaideekham</option>
+        </select><br>
+
+        <label for="occupationAddress">18) OCCUPATION ADDRESS:</label>
+        <textarea id="occupationAddress" name="occupationAddress" required></textarea><br>
+
+        <!-- Marital Status and Additional Information -->
+        <hr>
+        <label for="maritalStatus">20) ARE YOU MARRIED?</label>
+        <input type="radio" id="marriedYes" name="maritalStatus" value="yes" required>
+        <label for="marriedYes">Yes</label>
+        <input type="radio" id="marriedNo" name="maritalStatus" value="no" required>
+        <label for="marriedNo">No</label><br>
+
+        <label for="spouseName">Name of spouse (if married):</label>
+        <input type="text" id="spouseName" name="spouseName"><br>
+
+        <label for="spouseTamilBrahmin">Is spouse Tamil Brahmin?</label>
+        <input type="radio" id="spouseYes" name="spouseTamilBrahmin" value="yes">
+        <label for="spouseYes">Yes</label>
+        <input type="radio" id="spouseNo" name="spouseTamilBrahmin" value="no">
+        <label for="spouseNo">No</label><br>
+
+        <hr>
+        <label for="additionalDetails">22) ADDITIONAL DETAILS OR REMARKS:</label>
+        <textarea id="additionalDetails" name="additionalDetails"></textarea><br>
+
+        <label for="websiteLink">23) SHARABLE LINK THROUGH WHATSAPP (WEBSITE NAME ONLY):</label>
+        <input type="text" id="websiteLink" name="websiteLink" required><br>
+
+        <hr>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
